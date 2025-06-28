@@ -1,32 +1,12 @@
 {
   "project_info": {
-    "project_number": "363534831662",
-    "project_id": "easyrider-c3a50",
-    "storage_bucket": "easyrider-c3a50.appspot.com"
+    "project_number": "123456789012",
+    "project_id": "dummy-project-id"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:363534831662:android:a053ee86d6f26a9550cfbf",
-        "android_client_info": {
-          "package_name": "com.easyrider.app"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDlj4COxyvyHr0jjcIH3NMWQkswUej1b8g"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:363534831662:android:d1b2c496bb8af31950cfbf",
+        "mobilesdk_app_id": "1:123456789012:android:abcdef123456",
         "android_client_info": {
           "package_name": "com.easyrider.rider"
         }
@@ -34,7 +14,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDlj4COxyvyHr0jjcIH3NMWQkswUej1b8g"
+          "current_key": "dummy-api-key"
         }
       ],
       "services": {
@@ -45,4 +25,4 @@
     }
   ],
   "configuration_version": "1"
-}
+} 
