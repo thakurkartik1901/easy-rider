@@ -1,0 +1,96 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run -d chrome --verbose
+
+## exception
+
+ShaderCompilerException: ShaderCompilerException: Shader compilation of "/Users/kartikthakur/flutter/packages/flutter/lib/src/material/shaders/ink_sparkle.frag" to "build/flutter_assets/shaders/ink_sparkle.frag" failed with exit code 1.
+impellerc stdout:
+
+impellerc stderr:
+Could not write file to build/flutter_assets/shaders/ink_sparkle.frag
+
+
+
+
+```
+#0      ShaderCompiler.compileShader (package:flutter_tools/src/build_system/tools/shader_compiler.dart:193:9)
+<asynchronous suspension>
+#1      writeBundle.<anonymous closure> (package:flutter_tools/src/bundle_builder.dart:224:20)
+<asynchronous suspension>
+#2      Future.wait.<anonymous closure> (dart:async/future.dart:528:21)
+<asynchronous suspension>
+#3      writeBundle (package:flutter_tools/src/bundle_builder.dart:186:3)
+<asynchronous suspension>
+#4      WebDevFS.update (package:flutter_tools/src/isolated/devfs_web.dart:1039:9)
+<asynchronous suspension>
+#5      ResidentWebRunner._updateDevFS (package:flutter_tools/src/isolated/resident_web_runner.dart:584:35)
+<asynchronous suspension>
+#6      ResidentWebRunner.run.<anonymous closure> (package:flutter_tools/src/isolated/resident_web_runner.dart:329:41)
+<asynchronous suspension>
+#7      asyncGuard.<anonymous closure> (package:flutter_tools/src/base/async_guard.dart:109:26)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.29.0, on macOS 14.5 23F79 darwin-x64, locale en-IN) [769ms]
+    [32m•[39m Flutter version 3.29.0 on channel stable at /Users/kartikthakur/flutter
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 35c388afb5 (5 months ago), 2025-02-10 12:48:41 -0800
+    [32m•[39m Engine revision f73bfc4522
+    [32m•[39m Dart version 3.7.0
+    [32m•[39m DevTools version 2.42.2
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK version 35.0.0) [4.2s]
+    [32m•[39m Android SDK at /Users/kartikthakur/Library/Android/sdk
+    [32m•[39m Platform android-35, build-tools 35.0.0
+    [32m•[39m Java binary at: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java
+      This is the JDK bundled with the latest Android Studio installation on this machine.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.11+0-17.0.11b1207.24-11852314)
+    [32m•[39m All Android licenses accepted.
+
+[33m[!][39m Xcode - develop for iOS and macOS (Xcode 15.4) [3.1s]
+    [32m•[39m Xcode at /Applications/Xcode.app/Contents/Developer
+    [32m•[39m Build 15F31d
+    [33m![39m CocoaPods 1.15.2 out of date (1.16.2 is recommended).
+        CocoaPods is a package manager for iOS or macOS platform code.
+        Without CocoaPods, plugins will not work on iOS or macOS.
+        For more info, see https://flutter.dev/to/platform-plugins
+      To update CocoaPods, see https://guides.cocoapods.org/using/getting-started.html#updating-cocoapods
+
+[32m[✓][39m Chrome - develop for the web [16ms]
+    [32m•[39m Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[32m[✓][39m Android Studio (version 2024.1) [16ms]
+    [32m•[39m Android Studio at /Applications/Android Studio.app/Contents
+    [32m•[39m Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    [32m•[39m Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.11+0-17.0.11b1207.24-11852314)
+
+[32m[✓][39m VS Code (version 1.101.1) [11ms]
+    [32m•[39m VS Code at /Applications/Visual Studio Code.app/Contents
+    [32m•[39m Flutter extension version 3.106.0
+
+[32m[✓][39m Connected device (2 available) [8.3s]
+    [32m•[39m macOS (desktop) • macos  • darwin-x64     • macOS 14.5 23F79 darwin-x64
+    [32m•[39m Chrome (web)    • chrome • web-javascript • Google Chrome 138.0.7204.49
+    [33m![39m Error: Browsing on the local area network for Kartik’s iPhone. Ensure the device is unlocked and
+      attached with a cable or associated with the same local area network as this Mac.
+      The device must be opted into Developer Mode to connect wirelessly. (code -27)
+
+[33m[!][39m Network resources [1,368ms]
+    [31m✗[39m A cryptographic error occurred while checking "https://storage.googleapis.com/": Handshake error in
+      client
+      You may be experiencing a man-in-the-middle attack, your network may be compromised, or you may have
+      malware installed on your computer.
+
+[33m![39m Doctor found issues in 2 categories.
+```

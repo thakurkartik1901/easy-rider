@@ -1,0 +1,135 @@
+name: easy_rider
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.4 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  dartz: ^0.10.0-nullsafety.2 #ANDROID IOS LINUX MACOS WEB WINDOWS
+  dio: ^5.4.0 #ANDROID IOS LINUX MACOS WEB WINDOWS
+  provider: #ANDROID IOS LINUX MACOS WEB WINDOWS
+  path_provider: ^2.1.2
+  flash: ^3.1.0 #ANDROID IOS LINUX MACOS WEB WINDOWS
+  # cached_network_image: ^3.0.0 #ANDROID IOS MACOS-------------------check
+  shared_preferences: ^2.2.2 #ANDROID IOS LINUX MACOS WEB WINDOWS
+  # country_code_picker: ^2.0.2 #ANDROID IOS LINUX MACOS WEB WINDOWS
+  pin_code_fields: ^8.0.1 #ANDROID IOS LINUX MACOS WEB WINDOWS
+  lottie: ^3.0.0 #ANDROID IOS LINUX MACOS WEB WINDOWS
+  intl: 0.20.2 #ANDROID IOS LINUX MACOS WEB WINDOWS
+  shimmer: ^3.0.0 #ANDROID IOS LINUX MACOS WEB WINDOWS
+  webview_flutter:   #ANDROID_IOS-----------------------------------check
+  share_plus: ^7.2.1 #ANDROID IOS LINUX MACOS WEB WINDOWS
+  url_launcher: ^6.1.4 #ANDROID IOS LINUX MACOS WEB WINDOWS
+  package_info_plus: #ANDROID IOS LINUX MACOS WEB WINDOWS
+  flutter_svg: #ANDROID IOS LINUX MACOS WEB WINDOWS
+  carousel_slider: #ANDROID IOS LINUX MACOS WEB WINDOWS
+  connectivity_plus: #ANDROID IOS LINUX MACOS WEB WINDOWS
+  flutter_local_notifications: ^19.3.0 #ANDROID IOS LINUX MACOS
+  firebase_core:   #ANDROID IOS MACOS WEB
+  firebase_messaging:   #ANDROID IOS MACOS WEB
+  firebase_analytics:  #ANDROID IOS MACOS WEB
+  firebase_crashlytics:   #ANDROID IOS MACOS
+  firebase_remote_config:
+  flutter_native_splash: ^2.2.16
+  animate_do:
+  in_app_review: ^2.0.6
+  permission_handler: ^12.0.0
+  page_transition: ^2.0.9
+  flutter_background_service: ^5.1.0
+  geolocator: ^10.1.0
+
+  # audioplayers:
+  flutter_tts:
+  vibration:
+  just_audio:
+  get_it:
+  jwt_decoder: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner:
+  json_serializable: ^6.7.1
+  lint: ^2.3.0
+  flutter_launcher_icons: ^0.13.1
+
+dependency_overrides:
+  web: ^1.1.1
+  archive: ^4.0.7
+
+flutter_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "dev_assets/logo.png"
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "dev_assets/logo-adaptive.png"
+  web:
+    generate: true
+    image_path: "dev_assets/logo.png"
+    background_color: "#000000"
+    theme_color: "#000000"
+  windows:
+    generate: true
+    image_path: "dev_assets/logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "dev_assets/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/lottie/
+    - assets/sounds/
+
+  fonts:
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSans-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/NotoSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/NotoSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/NotoSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/NotoSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/NotoSans-ExtraBold.ttf
+          weight: 800
+    - family: Lora
+      fonts:
+        - asset: assets/fonts/Lora-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Lora-SemiBold.ttf
+          weight: 600

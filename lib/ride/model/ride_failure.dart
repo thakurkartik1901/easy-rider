@@ -1,0 +1,1 @@
+enum RideFailure { server, invalidCredential }
